@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script>
+        //reverse of string
+            let out = document.getElementById('out')
+            var string = "codecode"
+            var x = string.split("").reverse().join().replaceAll(",","")
+            console.log(`${x}`)
+            out.innerText = `${x}`
+            //output : 'edocedoc'
+
+            
+            /*var string = 'codecode'
+            var strlen = string.length
+            out = '';
+            for (var i = strlen - 1; i>=0 ; i--){
+                out += string[i]
+            }    
+            console.log(`${out}`)*/
+
+
+
+
+        //prime number or not 
+            var a = 4
+            if(a%2 == 0){
+                console.log(`${a} is not prime`)
+            }
+            else if (a < 1){
+                console.log(`${a} is not prime`)
+            }
+            else{
+                console.log(`${a} is  prime`)
+            }
+
+
+
+        //given an array of numbers , arrange them in a way that it forms the largest value
+            var a = [54,546,548,60]
+            var b = a.reverse()
+            b.join().replaceAll(',','')
+            //output : '6054854654'
+
+
+
+        //reverse of number N
+           var n = 988 ;
+           var x =  n.toString().split("").reverse().join().replaceAll(",","")
+           console.log(`${x}`)
+           //output : '889'
+
+
+        
+        //find maximum and minimum  element in the array
+            var a = [54,546,548,60]
+            var x = a.reduce((smallnum , num) => {
+                return Math.min(smallnum , num)
+            })
+            var y = a.reduce((maxnum , num) => {
+                return Math.max(maxnum, num)
+            })
+            console.log(`${x},${y}`)
+            //output : 54,548
+
+
+        </script>
+    </head>
+    <body>
+       <p id="out"></p>
+    </body>
+</html>
